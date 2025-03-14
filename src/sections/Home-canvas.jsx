@@ -14,7 +14,7 @@ import {
 } from '../components/LightsNhelpers';
 
 const Model = () => {
-  const { scene } = useGLTF('/models/deskNpc.glb');
+  const { scene } = useGLTF('models/deskNpc.glb');
   
   useEffect(() => {
     // Elements that should cast shadows

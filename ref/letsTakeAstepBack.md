@@ -61,3 +61,22 @@ sections/Navbar.jsx \
 components/Canvas3D.jsx \
 components/Content.jsx \
 components/deskNpc.jsx \
+
+│   App.jsx \
+│ \
+├───components \
+│       Navbar.jsx \
+│       Canvas3D.jsx \
+│       CanvasLoader.jsx \
+│       Content.jsx \
+│       deskNpc.jsx \
+│       Layout.jsx \
+│       LightsNhelpers.jsx \
+│ \
+└───sections \
+        Animations.jsx \
+        Art.jsx \
+		Home-canvas.jsx \
+        Home.jsx \
+        Sites.jsx \
+        Videos.jsx \
