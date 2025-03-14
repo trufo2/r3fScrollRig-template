@@ -10,7 +10,7 @@ import Art from "./sections/Art";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/3d_portfolio">
             <Routes>
                 <Route path="/" element={<Layout><Home /></Layout>} />
                 <Route path="/sites" element={<Layout><Sites /></Layout>} />
