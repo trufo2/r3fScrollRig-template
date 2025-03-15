@@ -15,34 +15,24 @@ const NavItems = () => {
         </ul>
     )
 }
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleMenu = () => {
         setIsOpen((prevIsOpen) => !prevIsOpen);
 		document.body.classList.toggle("menu-active");
     };
-    
-    // Close menu on window resize (for better mobile experience)
     useEffect(() => {
         const handleResize = () => {
-            // If we're on desktop size and menu is open, close it
             if (window.innerWidth >= 640 && isOpen) {
                 setIsOpen(false);
                 document.body.classList.remove("menu-active");
             }
         };
-        
-        // Add resize listener
         window.addEventListener('resize', handleResize);
-        
-        // Cleanup
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [isOpen]);
-
     return (
 		<header className='fixed top-0 left-0 right-0 z-[100] bg-black/90'>
 			<div className='max-w-7xl mx-auto'>
@@ -69,7 +59,6 @@ const Navbar = () => {
 					</nav>
 				</div>
 			</div>
-
 			<div
 				className={`nav-sidebar ${
 					isOpen ? "max-h-screen" : "max-h-0"
@@ -81,4 +70,5 @@ const Navbar = () => {
 		</header>
 	);
 }
+
 export default Navbar
