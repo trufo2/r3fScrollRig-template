@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'docs',
     emptyOutDir: true,
   },
-  base: '/3d_portfolio/' // GitHub Pages repository name
+  base: '/3d_portfolio/'
 })

@@ -8,4 +8,5 @@ const Videos = () => {
     </section>
   );
 };
+
 export default Videos;

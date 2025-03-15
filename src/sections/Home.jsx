@@ -3,9 +3,9 @@ const Home = () => {
         <div className="hero-section-a">
             <div className="hero-section-b disable-select relative z-30 bg-black/10 max-w-full mx-auto mt-20"
                 style={{ 
-                    height: 'auto',        // Only as tall as content
-                    padding: '1rem',       // Some spacing for the text
-                    background: 'rgba(0, 0, 0, 0.1)', // Slight background
+                    height: 'auto',
+                    padding: '1rem',
+                    background: 'rgba(0, 0, 0, 0.1)',
                     width: '100%'
                 }}>
                 <p className="hero-section-c">

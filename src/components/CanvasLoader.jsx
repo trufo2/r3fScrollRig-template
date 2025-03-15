@@ -4,12 +4,10 @@ import { useEffect, useState } from 'react';
 const CanvasLoader = () => {
   const { progress } = useProgress();
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
   }, []);
-
   return (
     mounted && (
       <Html
@@ -32,4 +30,3 @@ const CanvasLoader = () => {
 };
 
 export default CanvasLoader;
-
