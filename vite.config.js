@@ -7,5 +7,5 @@ export default defineConfig({
     outDir: 'docs',
     emptyOutDir: true,
   },
-  base: '/'
+  base: '/3d_portfolio/'
 })
