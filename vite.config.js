@@ -6,6 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     emptyOutDir: true,
-  },
-  base: '/3d_portfolio/'
+  }
 })
