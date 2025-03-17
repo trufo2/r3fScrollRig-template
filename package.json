@@ -3,6 +3,7 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "trufo2.github.io/r3fScrollRig-template/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
