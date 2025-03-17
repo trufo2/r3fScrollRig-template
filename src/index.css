@@ -14,9 +14,17 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   position: absolute;
   width: 100%;
+  height: 100%;
+}
+
+#sites {
+  overflow: hidden;
+  height: 100%;
+}
+
+#sites > div {
   height: 100%;
 }
 

@@ -1,6 +1,5 @@
-An personalised version of https://github.com/KaesyNock/threejs_templateportfolio \
-The "c" (at the bottom left) brings up the Lights-Control (top right)
+Portfolio template using https://github.com/14islands/r3f-scroll-rig?tab=readme-ov-file \
 
 ![screenshot](screenshot.jpg)
 
-see it live on: https://trufo2.github.io/3d_portfolio/
+see it live on: https://trufo2.github.io/

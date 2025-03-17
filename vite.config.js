@@ -7,5 +7,5 @@ export default defineConfig({
     outDir: 'docs',
     emptyOutDir: true,
   },
-  base: '/3d_portfolio/'
+  base: '/r3fScrollRig-template/'
 })
