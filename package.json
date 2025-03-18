@@ -2,6 +2,7 @@
   "name": "r3fScrollRig-template",
   "private": false,
   "version": "0.0.1",
+  "homepage": "trufo2.github.io/3d_portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,9 +13,9 @@
     "@14islands/r3f-scroll-rig": "^8.15.0",
     "@react-three/drei": "^10.0.0",
     "@react-three/fiber": "^9.0.4",
+    "leva": "^0.10.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-responsive": "^10.0.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^19.0.8",

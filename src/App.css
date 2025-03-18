@@ -9,9 +9,22 @@ a {
   color: inherit;
 }
 
+:root {
+  --text-right: 30vw;
+  --panel-height: 30vh;
+  --texts-top: 47vh;
+  --panels-top: -25vh;
+  --text-gap: 50vh;
+  --panel-gap: -33vh;
+}
+
 .three-element {
-  height: 30vh;
-  margin-top: -66vh;
+  height: var(--panel-height);
+  margin-top: var(--panel-gap);
+}
+
+.three-element-first {
+  margin-top: var(--panels-top);
 }
 
 .html-element {
@@ -20,9 +33,12 @@ a {
 }
 
 .html-text {
-  padding-left: 30vw;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
+  padding-left: var(--text-right);
+  margin-top: var(--text-gap);
+}
+
+.html-text-first {
+  margin-top: var(--texts-top);
 }
 
 .html-title, .html-description {
@@ -53,4 +69,22 @@ a {
 
 .html-description {
   font-size: 1.2rem;
+}
+
+.LevaButton {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

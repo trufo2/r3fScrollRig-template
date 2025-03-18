@@ -7,7 +7,7 @@ export const scrolRigHtml = {
   ],
   descriptions: [
     'Particle systems explained',
-    'DeepSeek: All your bases will belong to me... Soonish',
+    'Reasoning AI: All your bases will belong to me... Soonish',
     'ThreeJS: A JavaScript library used to display animated 3D in a web browser',
     'github project: drag the lights or modify them with double-click'
   ],
@@ -18,16 +18,16 @@ export const scrolRigHtml = {
     'https://trufo2.github.io/threejs_interactive_lights_bs14/'
   ],
   fileName: [
-    'natureofcode_com.jpg',
-    'deepSik.jpg',
-    'wikipedia_org-three.jpg',
-    'threejsDynamicLights.jpg'
+    './assets/textures/natureofcode_com.jpg',
+    './assets/textures/deepSik.jpg',
+    './assets/textures/wikipedia_org-three.jpg',
+    './assets/textures/threejsDynamicLights.jpg'
   ]
 };
 
-export default function ScrolRigHtmlComponent({ title, description, url }){
+export default function ScrolRigHtmlComponent({ title, description, url, isFirst }){
   return (
-    <article className="html-text">
+    <article className={`html-text ${isFirst ? 'html-text-first' : ''}`}>
       <h3 className="html-title">
         <span className="html-txtSpanTop">
           <a href={url} target="_blank" rel="noopener noreferrer">

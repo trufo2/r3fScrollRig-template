@@ -1,5 +1,5 @@
-import { scrolRigHtml } from "./scrolRigHtml";
-import ScrolRigHtmlComponent from "./scrolRigHtml";
+import { scrolRigHtml } from "./ScrolRigHtml";
+import ScrolRigHtmlComponent from "./ScrolRigHtml";
 import ScrolRigThreeComponent from "./scrolRigThree";
 
 export default function ScrolRigLayout(){
@@ -11,9 +11,11 @@ export default function ScrolRigLayout(){
             title={title}
             description={scrolRigHtml.descriptions[index]}
             url={scrolRigHtml.url[index]}
+            isFirst={index === 0}
           />
           <ScrolRigThreeComponent 
-            texturePath={`./assets/textures/${scrolRigHtml.fileName[index]}`}
+            texturePath={scrolRigHtml.fileName[index]}
+            isFirst={index === 0}
           />
         </div>
       ))}
